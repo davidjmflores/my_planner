@@ -25,6 +25,10 @@ def generate_launch_description():
             package='my_planner',
             executable='robot_controller', 
             output='screen',
-            name='robot_controller'
+            name='robot_controller_node',
+            remappings=[
+                ('/cmd_vel', '/Differential_drive_bot/cmd_vel'),  # Remap to your robot's cmd_vel topic
+                ('/tag_detections', '/apriltag_node/tag_detections')  # Remap to the AprilTag detection topic
+            ]
         )
     ])
