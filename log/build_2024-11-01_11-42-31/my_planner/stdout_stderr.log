@@ -1,0 +1,29 @@
+[ 20%] Built target david_planner_lib
+[35m[1mConsolidate compiler generated dependencies of target motion_controller_node[0m
+[35m[1mConsolidate compiler generated dependencies of target tag_detector_node[0m
+[ 40%] [32mBuilding CXX object CMakeFiles/motion_controller_node.dir/src/motion_controller_node.cpp.o[0m
+[ 80%] Built target tag_detector_node
+[100%] [32m[1mLinking CXX executable motion_controller_node[0m
+[100%] Built target motion_controller_node
+-- Install configuration: ""
+-- Installing: /home/david/ros2_ws/src/my_planner/install/my_planner/lib/my_planner/motion_controller_node
+-- Set runtime path of "/home/david/ros2_ws/src/my_planner/install/my_planner/lib/my_planner/motion_controller_node" to ""
+-- Installing: /home/david/ros2_ws/src/my_planner/install/my_planner/lib/my_planner/tag_detector_node
+-- Set runtime path of "/home/david/ros2_ws/src/my_planner/install/my_planner/lib/my_planner/tag_detector_node" to ""
+-- Up-to-date: /home/david/ros2_ws/src/my_planner/install/my_planner/share/my_planner/launch
+-- Installing: /home/david/ros2_ws/src/my_planner/install/my_planner/share/my_planner/launch/robot_controller_with_tags.py
+-- Up-to-date: /home/david/ros2_ws/src/my_planner/install/my_planner/share/ament_index/resource_index/package_run_dependencies/my_planner
+-- Installing: /home/david/ros2_ws/src/my_planner/install/my_planner/share/ament_index/resource_index/parent_prefix_path/my_planner
+-- Up-to-date: /home/david/ros2_ws/src/my_planner/install/my_planner/share/my_planner/environment/ament_prefix_path.sh
+-- Installing: /home/david/ros2_ws/src/my_planner/install/my_planner/share/my_planner/environment/ament_prefix_path.dsv
+-- Up-to-date: /home/david/ros2_ws/src/my_planner/install/my_planner/share/my_planner/environment/path.sh
+-- Installing: /home/david/ros2_ws/src/my_planner/install/my_planner/share/my_planner/environment/path.dsv
+-- Up-to-date: /home/david/ros2_ws/src/my_planner/install/my_planner/share/my_planner/local_setup.bash
+-- Up-to-date: /home/david/ros2_ws/src/my_planner/install/my_planner/share/my_planner/local_setup.sh
+-- Up-to-date: /home/david/ros2_ws/src/my_planner/install/my_planner/share/my_planner/local_setup.zsh
+-- Installing: /home/david/ros2_ws/src/my_planner/install/my_planner/share/my_planner/local_setup.dsv
+-- Installing: /home/david/ros2_ws/src/my_planner/install/my_planner/share/my_planner/package.dsv
+-- Up-to-date: /home/david/ros2_ws/src/my_planner/install/my_planner/share/ament_index/resource_index/packages/my_planner
+-- Up-to-date: /home/david/ros2_ws/src/my_planner/install/my_planner/share/my_planner/cmake/my_plannerConfig.cmake
+-- Up-to-date: /home/david/ros2_ws/src/my_planner/install/my_planner/share/my_planner/cmake/my_plannerConfig-version.cmake
+-- Up-to-date: /home/david/ros2_ws/src/my_planner/install/my_planner/share/my_planner/package.xml

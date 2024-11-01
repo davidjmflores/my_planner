@@ -1,0 +1,205 @@
+[0.000000] (-) TimerEvent: {}
+[0.000905] (my_planner) JobQueued: {'identifier': 'my_planner', 'dependencies': OrderedDict()}
+[0.000985] (my_planner) JobStarted: {'identifier': 'my_planner'}
+[0.015674] (my_planner) JobProgress: {'identifier': 'my_planner', 'progress': 'cmake'}
+[0.018603] (my_planner) JobProgress: {'identifier': 'my_planner', 'progress': 'build'}
+[0.018712] (my_planner) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/david/ros2_ws/src/my_planner/build/my_planner', '--', '-j4', '-l4'], 'cwd': '/home/david/ros2_ws/src/my_planner/build/my_planner', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'david'), ('XDG_SESSION_TYPE', 'wayland'), ('GIT_ASKPASS', '/usr/share/code/resources/app/extensions/git/dist/askpass.sh'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/david/ros2_ws/install/crazyflie_interfaces/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib:/usr/share/gazebo/../../lib/x86_64-linux-gnu/gazebo-11/plugins::/usr/share/gazebo/../../lib/x86_64-linux-gnu/gazebo-11/plugins:/usr/share/gazebo/../../lib/x86_64-linux-gnu/gazebo-11/plugins:'), ('HOME', '/home/david'), ('CHROME_DESKTOP', 'code-url-handler.desktop'), ('OLDPWD', '/home/david/ros2_ws/src'), ('TERM_PROGRAM_VERSION', '1.94.0'), ('DESKTOP_SESSION', 'ubuntu'), ('GIO_LAUNCHED_DESKTOP_FILE', '/usr/share/applications/code.desktop'), ('GAZEBO_MASTER_URI', 'http://localhost:11345'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('VSCODE_GIT_ASKPASS_MAIN', '/usr/share/code/resources/app/extensions/git/dist/askpass-main.js'), ('VSCODE_GIT_ASKPASS_NODE', '/usr/share/code/code'), ('MANAGERPID', '1596'), ('SYSTEMD_EXEC_PID', '1767'), ('IM_CONFIG_CHECK_ENV', '1'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '3916'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/david/ros2_ws/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'david'), ('JOURNAL_STREAM', '8:13046'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'david'), ('TERM', 'xterm-256color'), ('GAZEBO_MODEL_PATH', '/usr/share/gazebo/../../share/gazebo-11/models:/usr/share/gazebo/../../share/gazebo-11/models:'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('OGRE_RESOURCE_PATH', '/usr/lib/x86_64-linux-gnu/OGRE-1.9.0'), ('PATH', '/home/david/bin:/home/david/anaconda3/bin:/home/david/anaconda3/bin:/home/david/.emacs.d/bin:/home/david/.local/bin:/home/david/bin:/home/david/anaconda3/bin:/home/david/anaconda3/bin:/home/david/.emacs.d/bin:/opt/ros/humble/bin:/home/david/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin:/opt/ros/humble/lib/rqt_image_view:/opt/ros/humble/lib/rqt_image_view'), ('SESSION_MANAGER', 'local/ThinkPad-T430:@/tmp/.ICE-unix/1747,unix/ThinkPad-T430:/tmp/.ICE-unix/1747'), ('INVOCATION_ID', '213ff79d7e1746e6b8cb633b3dc540e2'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('GDK_BACKEND', 'x11'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'Unity'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.SNUXW2'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('VSCODE_GIT_IPC_HANDLE', '/run/user/1000/vscode-git-b11fa260ef.sock'), ('TERM_PROGRAM', 'vscode'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/david/ros2_ws/install/my_planner:/home/david/ros2_ws/install/example_py_pkg:/home/david/ros2_ws/install/example_cpp_pkg:/home/david/ros2_ws/install/crazyflie_sim:/home/david/ros2_ws/install/crazyflie_examples:/home/david/ros2_ws/install/crazyflie_py:/home/david/ros2_ws/install/crazyflie:/home/david/ros2_ws/install/crazyflie_interfaces:/home/david/ros2_ws/install/apriltag_detection:/opt/ros/humble'), ('ORIGINAL_XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('GAZEBO_RESOURCE_PATH', '/usr/share/gazebo/../../share/gazebo-11:/usr/share/gazebo/../../share/gazebo-11:'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('GAZEBO_MODEL_DATABASE_URI', 'http://models.gazebosim.org'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/david/ros2_ws/src/my_planner/build/my_planner'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('GAZEBO_PLUGIN_PATH', '/usr/share/gazebo/../../lib/x86_64-linux-gnu/gazebo-11/plugins:/usr/share/gazebo/../../lib/x86_64-linux-gnu/gazebo-11/plugins:'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/david/ros2_ws/install/example_py_pkg/lib/python3.10/site-packages:/home/david/ros2_ws/install/crazyflie_sim/local/lib/python3.10/dist-packages:/home/david/ros2_ws/install/crazyflie_examples/local/lib/python3.10/dist-packages:/home/david/ros2_ws/install/crazyflie_py/lib/python3.10/site-packages:/home/david/ros2_ws/install/crazyflie_interfaces/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/home/david/ros2_ws/install/my_planner:/home/david/ros2_ws/install/example_cpp_pkg:/home/david/ros2_ws/install/crazyflie_sim:/home/david/ros2_ws/install/crazyflie_examples:/home/david/ros2_ws/install/crazyflie:/home/david/ros2_ws/install/crazyflie_interfaces:/home/david/ros2_ws/install/apriltag_detection:/home/david/ros2_ws/install/example_py_pkg:/home/david/ros2_ws/install/crazyflie_py:/opt/ros/humble')]), 'shell': False}
+[0.099602] (-) TimerEvent: {}
+[0.162284] (my_planner) StdoutLine: {'line': b'[ 20%] Built target david_planner_lib\n'}
+[0.189589] (my_planner) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target motion_controller_node\x1b[0m\n'}
+[0.199722] (-) TimerEvent: {}
+[0.207683] (my_planner) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target tag_detector_node\x1b[0m\n'}
+[0.247459] (my_planner) StdoutLine: {'line': b'[ 40%] \x1b[32mBuilding CXX object CMakeFiles/motion_controller_node.dir/src/motion_controller_node.cpp.o\x1b[0m\n'}
+[0.278273] (my_planner) StdoutLine: {'line': b'[ 80%] Built target tag_detector_node\n'}
+[0.299832] (-) TimerEvent: {}
+[0.400596] (-) TimerEvent: {}
+[0.501272] (-) TimerEvent: {}
+[0.601965] (-) TimerEvent: {}
+[0.702401] (-) TimerEvent: {}
+[0.803043] (-) TimerEvent: {}
+[0.903611] (-) TimerEvent: {}
+[1.004082] (-) TimerEvent: {}
+[1.104607] (-) TimerEvent: {}
+[1.205063] (-) TimerEvent: {}
+[1.305521] (-) TimerEvent: {}
+[1.406112] (-) TimerEvent: {}
+[1.506563] (-) TimerEvent: {}
+[1.606986] (-) TimerEvent: {}
+[1.707423] (-) TimerEvent: {}
+[1.807869] (-) TimerEvent: {}
+[1.908298] (-) TimerEvent: {}
+[2.008738] (-) TimerEvent: {}
+[2.109170] (-) TimerEvent: {}
+[2.209639] (-) TimerEvent: {}
+[2.310106] (-) TimerEvent: {}
+[2.410575] (-) TimerEvent: {}
+[2.511051] (-) TimerEvent: {}
+[2.611479] (-) TimerEvent: {}
+[2.711985] (-) TimerEvent: {}
+[2.812408] (-) TimerEvent: {}
+[2.912928] (-) TimerEvent: {}
+[3.013317] (-) TimerEvent: {}
+[3.113739] (-) TimerEvent: {}
+[3.214113] (-) TimerEvent: {}
+[3.314492] (-) TimerEvent: {}
+[3.414939] (-) TimerEvent: {}
+[3.515308] (-) TimerEvent: {}
+[3.615817] (-) TimerEvent: {}
+[3.716266] (-) TimerEvent: {}
+[3.816687] (-) TimerEvent: {}
+[3.917095] (-) TimerEvent: {}
+[4.017570] (-) TimerEvent: {}
+[4.118074] (-) TimerEvent: {}
+[4.218441] (-) TimerEvent: {}
+[4.318933] (-) TimerEvent: {}
+[4.419591] (-) TimerEvent: {}
+[4.521762] (-) TimerEvent: {}
+[4.622201] (-) TimerEvent: {}
+[4.722611] (-) TimerEvent: {}
+[4.823077] (-) TimerEvent: {}
+[4.923707] (-) TimerEvent: {}
+[5.024154] (-) TimerEvent: {}
+[5.124535] (-) TimerEvent: {}
+[5.224895] (-) TimerEvent: {}
+[5.325375] (-) TimerEvent: {}
+[5.425902] (-) TimerEvent: {}
+[5.526326] (-) TimerEvent: {}
+[5.626750] (-) TimerEvent: {}
+[5.727171] (-) TimerEvent: {}
+[5.827573] (-) TimerEvent: {}
+[5.927962] (-) TimerEvent: {}
+[6.028339] (-) TimerEvent: {}
+[6.128734] (-) TimerEvent: {}
+[6.229080] (-) TimerEvent: {}
+[6.329478] (-) TimerEvent: {}
+[6.429845] (-) TimerEvent: {}
+[6.530234] (-) TimerEvent: {}
+[6.630596] (-) TimerEvent: {}
+[6.730961] (-) TimerEvent: {}
+[6.831325] (-) TimerEvent: {}
+[6.931703] (-) TimerEvent: {}
+[7.032075] (-) TimerEvent: {}
+[7.132430] (-) TimerEvent: {}
+[7.232807] (-) TimerEvent: {}
+[7.333159] (-) TimerEvent: {}
+[7.433533] (-) TimerEvent: {}
+[7.533896] (-) TimerEvent: {}
+[7.634266] (-) TimerEvent: {}
+[7.734683] (-) TimerEvent: {}
+[7.835050] (-) TimerEvent: {}
+[7.935405] (-) TimerEvent: {}
+[8.035794] (-) TimerEvent: {}
+[8.136151] (-) TimerEvent: {}
+[8.236595] (-) TimerEvent: {}
+[8.336956] (-) TimerEvent: {}
+[8.437317] (-) TimerEvent: {}
+[8.537700] (-) TimerEvent: {}
+[8.638067] (-) TimerEvent: {}
+[8.738428] (-) TimerEvent: {}
+[8.838839] (-) TimerEvent: {}
+[8.939198] (-) TimerEvent: {}
+[9.039567] (-) TimerEvent: {}
+[9.139922] (-) TimerEvent: {}
+[9.240278] (-) TimerEvent: {}
+[9.340585] (-) TimerEvent: {}
+[9.440947] (-) TimerEvent: {}
+[9.541324] (-) TimerEvent: {}
+[9.641687] (-) TimerEvent: {}
+[9.742655] (-) TimerEvent: {}
+[9.843270] (-) TimerEvent: {}
+[9.943696] (-) TimerEvent: {}
+[10.044080] (-) TimerEvent: {}
+[10.144482] (-) TimerEvent: {}
+[10.244901] (-) TimerEvent: {}
+[10.345317] (-) TimerEvent: {}
+[10.447582] (-) TimerEvent: {}
+[10.547987] (-) TimerEvent: {}
+[10.648439] (-) TimerEvent: {}
+[10.748872] (-) TimerEvent: {}
+[10.849258] (-) TimerEvent: {}
+[10.949691] (-) TimerEvent: {}
+[11.050084] (-) TimerEvent: {}
+[11.150468] (-) TimerEvent: {}
+[11.250874] (-) TimerEvent: {}
+[11.351303] (-) TimerEvent: {}
+[11.451824] (-) TimerEvent: {}
+[11.552196] (-) TimerEvent: {}
+[11.652577] (-) TimerEvent: {}
+[11.752918] (-) TimerEvent: {}
+[11.853265] (-) TimerEvent: {}
+[11.953655] (-) TimerEvent: {}
+[12.054031] (-) TimerEvent: {}
+[12.154404] (-) TimerEvent: {}
+[12.254800] (-) TimerEvent: {}
+[12.355186] (-) TimerEvent: {}
+[12.455567] (-) TimerEvent: {}
+[12.555969] (-) TimerEvent: {}
+[12.656337] (-) TimerEvent: {}
+[12.756725] (-) TimerEvent: {}
+[12.857095] (-) TimerEvent: {}
+[12.957463] (-) TimerEvent: {}
+[13.057855] (-) TimerEvent: {}
+[13.158219] (-) TimerEvent: {}
+[13.258591] (-) TimerEvent: {}
+[13.358981] (-) TimerEvent: {}
+[13.459349] (-) TimerEvent: {}
+[13.559736] (-) TimerEvent: {}
+[13.660145] (-) TimerEvent: {}
+[13.760535] (-) TimerEvent: {}
+[13.860909] (-) TimerEvent: {}
+[13.961277] (-) TimerEvent: {}
+[14.061664] (-) TimerEvent: {}
+[14.162038] (-) TimerEvent: {}
+[14.262415] (-) TimerEvent: {}
+[14.362809] (-) TimerEvent: {}
+[14.463183] (-) TimerEvent: {}
+[14.563563] (-) TimerEvent: {}
+[14.663935] (-) TimerEvent: {}
+[14.764307] (-) TimerEvent: {}
+[14.864701] (-) TimerEvent: {}
+[14.965082] (-) TimerEvent: {}
+[15.065458] (-) TimerEvent: {}
+[15.165870] (-) TimerEvent: {}
+[15.266260] (-) TimerEvent: {}
+[15.366750] (-) TimerEvent: {}
+[15.467585] (-) TimerEvent: {}
+[15.568035] (-) TimerEvent: {}
+[15.651941] (my_planner) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking CXX executable motion_controller_node\x1b[0m\n'}
+[15.668162] (-) TimerEvent: {}
+[15.768607] (-) TimerEvent: {}
+[15.869127] (-) TimerEvent: {}
+[15.969702] (-) TimerEvent: {}
+[16.071475] (-) TimerEvent: {}
+[16.172217] (-) TimerEvent: {}
+[16.273590] (-) TimerEvent: {}
+[16.341301] (my_planner) StdoutLine: {'line': b'[100%] Built target motion_controller_node\n'}
+[16.355062] (my_planner) CommandEnded: {'returncode': 0}
+[16.373680] (-) TimerEvent: {}
+[16.390507] (my_planner) JobProgress: {'identifier': 'my_planner', 'progress': 'install'}
+[16.405264] (my_planner) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/david/ros2_ws/src/my_planner/build/my_planner'], 'cwd': '/home/david/ros2_ws/src/my_planner/build/my_planner', 'env': OrderedDict([('GJS_DEBUG_TOPICS', 'JS ERROR;JS LOG'), ('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'david'), ('XDG_SESSION_TYPE', 'wayland'), ('GIT_ASKPASS', '/usr/share/code/resources/app/extensions/git/dist/askpass.sh'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/home/david/ros2_ws/install/crazyflie_interfaces/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib:/usr/share/gazebo/../../lib/x86_64-linux-gnu/gazebo-11/plugins::/usr/share/gazebo/../../lib/x86_64-linux-gnu/gazebo-11/plugins:/usr/share/gazebo/../../lib/x86_64-linux-gnu/gazebo-11/plugins:'), ('HOME', '/home/david'), ('CHROME_DESKTOP', 'code-url-handler.desktop'), ('OLDPWD', '/home/david/ros2_ws/src'), ('TERM_PROGRAM_VERSION', '1.94.0'), ('DESKTOP_SESSION', 'ubuntu'), ('GIO_LAUNCHED_DESKTOP_FILE', '/usr/share/applications/code.desktop'), ('GAZEBO_MASTER_URI', 'http://localhost:11345'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('VSCODE_GIT_ASKPASS_MAIN', '/usr/share/code/resources/app/extensions/git/dist/askpass-main.js'), ('VSCODE_GIT_ASKPASS_NODE', '/usr/share/code/code'), ('MANAGERPID', '1596'), ('SYSTEMD_EXEC_PID', '1767'), ('IM_CONFIG_CHECK_ENV', '1'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('GIO_LAUNCHED_DESKTOP_FILE_PID', '3916'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('COLCON_PREFIX_PATH', '/home/david/ros2_ws/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'david'), ('JOURNAL_STREAM', '8:13046'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'david'), ('TERM', 'xterm-256color'), ('GAZEBO_MODEL_PATH', '/usr/share/gazebo/../../share/gazebo-11/models:/usr/share/gazebo/../../share/gazebo-11/models:'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('OGRE_RESOURCE_PATH', '/usr/lib/x86_64-linux-gnu/OGRE-1.9.0'), ('PATH', '/home/david/bin:/home/david/anaconda3/bin:/home/david/anaconda3/bin:/home/david/.emacs.d/bin:/home/david/.local/bin:/home/david/bin:/home/david/anaconda3/bin:/home/david/anaconda3/bin:/home/david/.emacs.d/bin:/opt/ros/humble/bin:/home/david/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin:/opt/ros/humble/lib/rqt_image_view:/opt/ros/humble/lib/rqt_image_view'), ('SESSION_MANAGER', 'local/ThinkPad-T430:@/tmp/.ICE-unix/1747,unix/ThinkPad-T430:/tmp/.ICE-unix/1747'), ('INVOCATION_ID', '213ff79d7e1746e6b8cb633b3dc540e2'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('GDK_BACKEND', 'x11'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'Unity'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.SNUXW2'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('VSCODE_GIT_IPC_HANDLE', '/run/user/1000/vscode-git-b11fa260ef.sock'), ('TERM_PROGRAM', 'vscode'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/home/david/ros2_ws/install/my_planner:/home/david/ros2_ws/install/example_py_pkg:/home/david/ros2_ws/install/example_cpp_pkg:/home/david/ros2_ws/install/crazyflie_sim:/home/david/ros2_ws/install/crazyflie_examples:/home/david/ros2_ws/install/crazyflie_py:/home/david/ros2_ws/install/crazyflie:/home/david/ros2_ws/install/crazyflie_interfaces:/home/david/ros2_ws/install/apriltag_detection:/opt/ros/humble'), ('ORIGINAL_XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('GAZEBO_RESOURCE_PATH', '/usr/share/gazebo/../../share/gazebo-11:/usr/share/gazebo/../../share/gazebo-11:'), ('GJS_DEBUG_OUTPUT', 'stderr'), ('GAZEBO_MODEL_DATABASE_URI', 'http://models.gazebosim.org'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/david/ros2_ws/src/my_planner/build/my_planner'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('GAZEBO_PLUGIN_PATH', '/usr/share/gazebo/../../lib/x86_64-linux-gnu/gazebo-11/plugins:/usr/share/gazebo/../../lib/x86_64-linux-gnu/gazebo-11/plugins:'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/home/david/ros2_ws/install/example_py_pkg/lib/python3.10/site-packages:/home/david/ros2_ws/install/crazyflie_sim/local/lib/python3.10/dist-packages:/home/david/ros2_ws/install/crazyflie_examples/local/lib/python3.10/dist-packages:/home/david/ros2_ws/install/crazyflie_py/lib/python3.10/site-packages:/home/david/ros2_ws/install/crazyflie_interfaces/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/home/david/ros2_ws/install/my_planner:/home/david/ros2_ws/install/example_cpp_pkg:/home/david/ros2_ws/install/crazyflie_sim:/home/david/ros2_ws/install/crazyflie_examples:/home/david/ros2_ws/install/crazyflie:/home/david/ros2_ws/install/crazyflie_interfaces:/home/david/ros2_ws/install/apriltag_detection:/home/david/ros2_ws/install/example_py_pkg:/home/david/ros2_ws/install/crazyflie_py:/opt/ros/humble')]), 'shell': False}
+[16.417819] (my_planner) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[16.418184] (my_planner) StdoutLine: {'line': b'-- Installing: /home/david/ros2_ws/src/my_planner/install/my_planner/lib/my_planner/motion_controller_node\n'}
+[16.422724] (my_planner) StdoutLine: {'line': b'-- Set runtime path of "/home/david/ros2_ws/src/my_planner/install/my_planner/lib/my_planner/motion_controller_node" to ""\n'}
+[16.423050] (my_planner) StdoutLine: {'line': b'-- Installing: /home/david/ros2_ws/src/my_planner/install/my_planner/lib/my_planner/tag_detector_node\n'}
+[16.427360] (my_planner) StdoutLine: {'line': b'-- Set runtime path of "/home/david/ros2_ws/src/my_planner/install/my_planner/lib/my_planner/tag_detector_node" to ""\n'}
+[16.427685] (my_planner) StdoutLine: {'line': b'-- Up-to-date: /home/david/ros2_ws/src/my_planner/install/my_planner/share/my_planner/launch\n'}
+[16.427896] (my_planner) StdoutLine: {'line': b'-- Installing: /home/david/ros2_ws/src/my_planner/install/my_planner/share/my_planner/launch/robot_controller_with_tags.py\n'}
+[16.428056] (my_planner) StdoutLine: {'line': b'-- Up-to-date: /home/david/ros2_ws/src/my_planner/install/my_planner/share/ament_index/resource_index/package_run_dependencies/my_planner\n'}
+[16.428258] (my_planner) StdoutLine: {'line': b'-- Installing: /home/david/ros2_ws/src/my_planner/install/my_planner/share/ament_index/resource_index/parent_prefix_path/my_planner\n'}
+[16.428496] (my_planner) StdoutLine: {'line': b'-- Up-to-date: /home/david/ros2_ws/src/my_planner/install/my_planner/share/my_planner/environment/ament_prefix_path.sh\n'}
+[16.428689] (my_planner) StdoutLine: {'line': b'-- Installing: /home/david/ros2_ws/src/my_planner/install/my_planner/share/my_planner/environment/ament_prefix_path.dsv\n'}
+[16.428837] (my_planner) StdoutLine: {'line': b'-- Up-to-date: /home/david/ros2_ws/src/my_planner/install/my_planner/share/my_planner/environment/path.sh\n'}
+[16.428985] (my_planner) StdoutLine: {'line': b'-- Installing: /home/david/ros2_ws/src/my_planner/install/my_planner/share/my_planner/environment/path.dsv\n'}
+[16.429133] (my_planner) StdoutLine: {'line': b'-- Up-to-date: /home/david/ros2_ws/src/my_planner/install/my_planner/share/my_planner/local_setup.bash\n'}
+[16.429378] (my_planner) StdoutLine: {'line': b'-- Up-to-date: /home/david/ros2_ws/src/my_planner/install/my_planner/share/my_planner/local_setup.sh\n'}
+[16.429581] (my_planner) StdoutLine: {'line': b'-- Up-to-date: /home/david/ros2_ws/src/my_planner/install/my_planner/share/my_planner/local_setup.zsh\n'}
+[16.429735] (my_planner) StdoutLine: {'line': b'-- Installing: /home/david/ros2_ws/src/my_planner/install/my_planner/share/my_planner/local_setup.dsv\n'}
+[16.429874] (my_planner) StdoutLine: {'line': b'-- Installing: /home/david/ros2_ws/src/my_planner/install/my_planner/share/my_planner/package.dsv\n'}
+[16.430009] (my_planner) StdoutLine: {'line': b'-- Up-to-date: /home/david/ros2_ws/src/my_planner/install/my_planner/share/ament_index/resource_index/packages/my_planner\n'}
+[16.430148] (my_planner) StdoutLine: {'line': b'-- Up-to-date: /home/david/ros2_ws/src/my_planner/install/my_planner/share/my_planner/cmake/my_plannerConfig.cmake\n'}
+[16.430286] (my_planner) StdoutLine: {'line': b'-- Up-to-date: /home/david/ros2_ws/src/my_planner/install/my_planner/share/my_planner/cmake/my_plannerConfig-version.cmake\n'}
+[16.430431] (my_planner) StdoutLine: {'line': b'-- Up-to-date: /home/david/ros2_ws/src/my_planner/install/my_planner/share/my_planner/package.xml\n'}
+[16.432224] (my_planner) CommandEnded: {'returncode': 0}
+[16.473773] (-) TimerEvent: {}
+[16.497142] (my_planner) JobEnded: {'identifier': 'my_planner', 'rc': 0}
+[16.498319] (-) EventReactorShutdown: {}

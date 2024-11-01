@@ -198,17 +198,30 @@ my_planner_uninstall/fast:
 .PHONY : my_planner_uninstall/fast
 
 #=============================================================================
-# Target rules for targets named robot_controller
+# Target rules for targets named motion_controller_node
 
 # Build rule for target.
-robot_controller: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 robot_controller
-.PHONY : robot_controller
+motion_controller_node: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 motion_controller_node
+.PHONY : motion_controller_node
 
 # fast build rule for target.
-robot_controller/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/robot_controller.dir/build.make CMakeFiles/robot_controller.dir/build
-.PHONY : robot_controller/fast
+motion_controller_node/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/motion_controller_node.dir/build.make CMakeFiles/motion_controller_node.dir/build
+.PHONY : motion_controller_node/fast
+
+#=============================================================================
+# Target rules for targets named tag_detector_node
+
+# Build rule for target.
+tag_detector_node: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 tag_detector_node
+.PHONY : tag_detector_node
+
+# fast build rule for target.
+tag_detector_node/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tag_detector_node.dir/build.make CMakeFiles/tag_detector_node.dir/build
+.PHONY : tag_detector_node/fast
 
 #=============================================================================
 # Target rules for targets named david_planner_lib
@@ -223,29 +236,53 @@ david_planner_lib/fast:
 	$(MAKE) $(MAKESILENT) -f david_planner/CMakeFiles/david_planner_lib.dir/build.make david_planner/CMakeFiles/david_planner_lib.dir/build
 .PHONY : david_planner_lib/fast
 
-src/robot_controller_with_tags.o: src/robot_controller_with_tags.cpp.o
-.PHONY : src/robot_controller_with_tags.o
+src/motion_controller_node.o: src/motion_controller_node.cpp.o
+.PHONY : src/motion_controller_node.o
 
 # target to build an object file
-src/robot_controller_with_tags.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/robot_controller.dir/build.make CMakeFiles/robot_controller.dir/src/robot_controller_with_tags.cpp.o
-.PHONY : src/robot_controller_with_tags.cpp.o
+src/motion_controller_node.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/motion_controller_node.dir/build.make CMakeFiles/motion_controller_node.dir/src/motion_controller_node.cpp.o
+.PHONY : src/motion_controller_node.cpp.o
 
-src/robot_controller_with_tags.i: src/robot_controller_with_tags.cpp.i
-.PHONY : src/robot_controller_with_tags.i
+src/motion_controller_node.i: src/motion_controller_node.cpp.i
+.PHONY : src/motion_controller_node.i
 
 # target to preprocess a source file
-src/robot_controller_with_tags.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/robot_controller.dir/build.make CMakeFiles/robot_controller.dir/src/robot_controller_with_tags.cpp.i
-.PHONY : src/robot_controller_with_tags.cpp.i
+src/motion_controller_node.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/motion_controller_node.dir/build.make CMakeFiles/motion_controller_node.dir/src/motion_controller_node.cpp.i
+.PHONY : src/motion_controller_node.cpp.i
 
-src/robot_controller_with_tags.s: src/robot_controller_with_tags.cpp.s
-.PHONY : src/robot_controller_with_tags.s
+src/motion_controller_node.s: src/motion_controller_node.cpp.s
+.PHONY : src/motion_controller_node.s
 
 # target to generate assembly for a file
-src/robot_controller_with_tags.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/robot_controller.dir/build.make CMakeFiles/robot_controller.dir/src/robot_controller_with_tags.cpp.s
-.PHONY : src/robot_controller_with_tags.cpp.s
+src/motion_controller_node.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/motion_controller_node.dir/build.make CMakeFiles/motion_controller_node.dir/src/motion_controller_node.cpp.s
+.PHONY : src/motion_controller_node.cpp.s
+
+src/tag_detector_node.o: src/tag_detector_node.cpp.o
+.PHONY : src/tag_detector_node.o
+
+# target to build an object file
+src/tag_detector_node.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tag_detector_node.dir/build.make CMakeFiles/tag_detector_node.dir/src/tag_detector_node.cpp.o
+.PHONY : src/tag_detector_node.cpp.o
+
+src/tag_detector_node.i: src/tag_detector_node.cpp.i
+.PHONY : src/tag_detector_node.i
+
+# target to preprocess a source file
+src/tag_detector_node.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tag_detector_node.dir/build.make CMakeFiles/tag_detector_node.dir/src/tag_detector_node.cpp.i
+.PHONY : src/tag_detector_node.cpp.i
+
+src/tag_detector_node.s: src/tag_detector_node.cpp.s
+.PHONY : src/tag_detector_node.s
+
+# target to generate assembly for a file
+src/tag_detector_node.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tag_detector_node.dir/build.make CMakeFiles/tag_detector_node.dir/src/tag_detector_node.cpp.s
+.PHONY : src/tag_detector_node.cpp.s
 
 # Help Target
 help:
@@ -263,10 +300,14 @@ help:
 	@echo "... my_planner_uninstall"
 	@echo "... uninstall"
 	@echo "... david_planner_lib"
-	@echo "... robot_controller"
-	@echo "... src/robot_controller_with_tags.o"
-	@echo "... src/robot_controller_with_tags.i"
-	@echo "... src/robot_controller_with_tags.s"
+	@echo "... motion_controller_node"
+	@echo "... tag_detector_node"
+	@echo "... src/motion_controller_node.o"
+	@echo "... src/motion_controller_node.i"
+	@echo "... src/motion_controller_node.s"
+	@echo "... src/tag_detector_node.o"
+	@echo "... src/tag_detector_node.i"
+	@echo "... src/tag_detector_node.s"
 .PHONY : help
 
 

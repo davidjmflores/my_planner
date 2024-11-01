@@ -1,6 +1,7 @@
 /home/david/ros2_ws/src/my_planner/build/my_planner/CMakeFiles/uninstall.dir
 /home/david/ros2_ws/src/my_planner/build/my_planner/CMakeFiles/my_planner_uninstall.dir
-/home/david/ros2_ws/src/my_planner/build/my_planner/CMakeFiles/robot_controller.dir
+/home/david/ros2_ws/src/my_planner/build/my_planner/CMakeFiles/motion_controller_node.dir
+/home/david/ros2_ws/src/my_planner/build/my_planner/CMakeFiles/tag_detector_node.dir
 /home/david/ros2_ws/src/my_planner/build/my_planner/CMakeFiles/test.dir
 /home/david/ros2_ws/src/my_planner/build/my_planner/CMakeFiles/edit_cache.dir
 /home/david/ros2_ws/src/my_planner/build/my_planner/CMakeFiles/rebuild_cache.dir

@@ -63,7 +63,8 @@ CMAKE_BINARY_DIR = /home/david/ros2_ws/src/my_planner/build/my_planner
 # Directory level rules for the build root directory
 
 # The main recursive "all" target.
-all: CMakeFiles/robot_controller.dir/all
+all: CMakeFiles/motion_controller_node.dir/all
+all: CMakeFiles/tag_detector_node.dir/all
 all: david_planner/all
 .PHONY : all
 
@@ -74,7 +75,8 @@ preinstall: david_planner/preinstall
 # The main recursive "clean" target.
 clean: CMakeFiles/uninstall.dir/clean
 clean: CMakeFiles/my_planner_uninstall.dir/clean
-clean: CMakeFiles/robot_controller.dir/clean
+clean: CMakeFiles/motion_controller_node.dir/clean
+clean: CMakeFiles/tag_detector_node.dir/clean
 clean: david_planner/clean
 .PHONY : clean
 
@@ -146,30 +148,56 @@ CMakeFiles/my_planner_uninstall.dir/clean:
 .PHONY : CMakeFiles/my_planner_uninstall.dir/clean
 
 #=============================================================================
-# Target rules for target CMakeFiles/robot_controller.dir
+# Target rules for target CMakeFiles/motion_controller_node.dir
 
 # All Build rule for target.
-CMakeFiles/robot_controller.dir/all: david_planner/CMakeFiles/david_planner_lib.dir/all
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/robot_controller.dir/build.make CMakeFiles/robot_controller.dir/depend
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/robot_controller.dir/build.make CMakeFiles/robot_controller.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/david/ros2_ws/src/my_planner/build/my_planner/CMakeFiles --progress-num=2,3 "Built target robot_controller"
-.PHONY : CMakeFiles/robot_controller.dir/all
+CMakeFiles/motion_controller_node.dir/all: david_planner/CMakeFiles/david_planner_lib.dir/all
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/motion_controller_node.dir/build.make CMakeFiles/motion_controller_node.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/motion_controller_node.dir/build.make CMakeFiles/motion_controller_node.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/david/ros2_ws/src/my_planner/build/my_planner/CMakeFiles --progress-num=2,3 "Built target motion_controller_node"
+.PHONY : CMakeFiles/motion_controller_node.dir/all
 
 # Build rule for subdir invocation for target.
-CMakeFiles/robot_controller.dir/rule: cmake_check_build_system
+CMakeFiles/motion_controller_node.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/david/ros2_ws/src/my_planner/build/my_planner/CMakeFiles 3
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/robot_controller.dir/all
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/motion_controller_node.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/david/ros2_ws/src/my_planner/build/my_planner/CMakeFiles 0
-.PHONY : CMakeFiles/robot_controller.dir/rule
+.PHONY : CMakeFiles/motion_controller_node.dir/rule
 
 # Convenience name for target.
-robot_controller: CMakeFiles/robot_controller.dir/rule
-.PHONY : robot_controller
+motion_controller_node: CMakeFiles/motion_controller_node.dir/rule
+.PHONY : motion_controller_node
 
 # clean rule for target.
-CMakeFiles/robot_controller.dir/clean:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/robot_controller.dir/build.make CMakeFiles/robot_controller.dir/clean
-.PHONY : CMakeFiles/robot_controller.dir/clean
+CMakeFiles/motion_controller_node.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/motion_controller_node.dir/build.make CMakeFiles/motion_controller_node.dir/clean
+.PHONY : CMakeFiles/motion_controller_node.dir/clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/tag_detector_node.dir
+
+# All Build rule for target.
+CMakeFiles/tag_detector_node.dir/all: david_planner/CMakeFiles/david_planner_lib.dir/all
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tag_detector_node.dir/build.make CMakeFiles/tag_detector_node.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tag_detector_node.dir/build.make CMakeFiles/tag_detector_node.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/david/ros2_ws/src/my_planner/build/my_planner/CMakeFiles --progress-num=4,5 "Built target tag_detector_node"
+.PHONY : CMakeFiles/tag_detector_node.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/tag_detector_node.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/david/ros2_ws/src/my_planner/build/my_planner/CMakeFiles 3
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/tag_detector_node.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/david/ros2_ws/src/my_planner/build/my_planner/CMakeFiles 0
+.PHONY : CMakeFiles/tag_detector_node.dir/rule
+
+# Convenience name for target.
+tag_detector_node: CMakeFiles/tag_detector_node.dir/rule
+.PHONY : tag_detector_node
+
+# clean rule for target.
+CMakeFiles/tag_detector_node.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/tag_detector_node.dir/build.make CMakeFiles/tag_detector_node.dir/clean
+.PHONY : CMakeFiles/tag_detector_node.dir/clean
 
 #=============================================================================
 # Target rules for target david_planner/CMakeFiles/david_planner_lib.dir
