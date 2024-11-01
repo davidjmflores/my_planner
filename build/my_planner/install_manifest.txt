@@ -1,0 +1,17 @@
+/home/david/ros2_ws/src/my_planner/install/my_planner/lib/my_planner/robot_controller
+/home/david/ros2_ws/src/my_planner/install/my_planner/share/my_planner/launch/robot_controller_with_tags.py
+/home/david/ros2_ws/src/my_planner/install/my_planner/share/ament_index/resource_index/package_run_dependencies/my_planner
+/home/david/ros2_ws/src/my_planner/install/my_planner/share/ament_index/resource_index/parent_prefix_path/my_planner
+/home/david/ros2_ws/src/my_planner/install/my_planner/share/my_planner/environment/ament_prefix_path.sh
+/home/david/ros2_ws/src/my_planner/install/my_planner/share/my_planner/environment/ament_prefix_path.dsv
+/home/david/ros2_ws/src/my_planner/install/my_planner/share/my_planner/environment/path.sh
+/home/david/ros2_ws/src/my_planner/install/my_planner/share/my_planner/environment/path.dsv
+/home/david/ros2_ws/src/my_planner/install/my_planner/share/my_planner/local_setup.bash
+/home/david/ros2_ws/src/my_planner/install/my_planner/share/my_planner/local_setup.sh
+/home/david/ros2_ws/src/my_planner/install/my_planner/share/my_planner/local_setup.zsh
+/home/david/ros2_ws/src/my_planner/install/my_planner/share/my_planner/local_setup.dsv
+/home/david/ros2_ws/src/my_planner/install/my_planner/share/my_planner/package.dsv
+/home/david/ros2_ws/src/my_planner/install/my_planner/share/ament_index/resource_index/packages/my_planner
+/home/david/ros2_ws/src/my_planner/install/my_planner/share/my_planner/cmake/my_plannerConfig.cmake
+/home/david/ros2_ws/src/my_planner/install/my_planner/share/my_planner/cmake/my_plannerConfig-version.cmake
+/home/david/ros2_ws/src/my_planner/install/my_planner/share/my_planner/package.xml

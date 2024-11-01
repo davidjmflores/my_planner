@@ -1,4 +1,5 @@
 cmake_minimum_required(VERSION 3.8)
+set(CMAKE_CXX_STANDARD 20)
 project(my_planner)
 
 if(CMAKE_COMPILER_IS_GNUCXX OR CMAKE_CXX_COMPILER_ID MATCHES "Clang")
@@ -21,21 +22,29 @@ if(BUILD_TESTING)
 endif()
 
 # Add executable
-add_executable(robot_controller src/robot_controller_with_tags.cpp)
-target_link_libraries(robot_controller david_planner_lib)
+add_executable(motion_controller_node src/motion_controller_node.cpp)
+target_link_libraries(motion_controller_node david_planner_lib)
+add_executable(tag_detector_node src/tag_detector_node.cpp)
+target_link_libraries(tag_detector_node david_planner_lib)
 
 # Link dependencies
-ament_target_dependencies(robot_controller rclcpp geometry_msgs apriltag_msgs)
+ament_target_dependencies(motion_controller_node rclcpp geometry_msgs)
+ament_target_dependencies(tag_detector_node rclcpp apriltag_msgs)
 
 # Include directories
-target_include_directories(robot_controller PRIVATE
+target_include_directories(motion_controller_node PRIVATE
+    $<BUILD_INTERFACE:${CMAKE_CURRENT_SOURCE_DIR}/david_planner/include>
+    $<INSTALL_INTERFACE:include>
+)
+target_include_directories(tag_detector_node PRIVATE
     $<BUILD_INTERFACE:${CMAKE_CURRENT_SOURCE_DIR}/david_planner/include>
     $<INSTALL_INTERFACE:include>
 )
 
 # Install targets
 install(TARGETS
-  robot_controller
+  motion_controller_node
+  tag_detector_node
   DESTINATION lib/${PROJECT_NAME}
 )
 

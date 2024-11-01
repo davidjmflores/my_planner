@@ -1,0 +1,2 @@
+/usr/bin/ar qc libdavid_planner_lib.a 
+/usr/bin/ranlib libdavid_planner_lib.a

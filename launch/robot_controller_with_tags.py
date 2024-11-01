@@ -23,12 +23,20 @@ def generate_launch_description():
         # Robot Controller with AprilTags Node
         Node(
             package='my_planner',
-            executable='robot_controller', 
+            executable='motion_controller_node', 
             output='screen',
-            name='robot_controller_node',
+            name='motion_controller_node',
             remappings=[
-                ('/cmd_vel', '/Differential_drive_bot/cmd_vel'),  # Remap to your robot's cmd_vel topic
-                ('/tag_detections', '/apriltag_node/tag_detections')  # Remap to the AprilTag detection topic
+                ('/cmd_vel', '/Differential_drive_bot/cmd_vel'), 
+            ]
+        ),
+        Node(
+            package='my_planner',
+            executable='tag_detector_node', 
+            output='screen',
+            name='tag_detector_node',
+            remappings=[
+                ('/tag_detections', '/apriltag_node/tag_detections') 
             ]
         )
     ])
